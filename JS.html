@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter the number<input id="no" type="number"></input><br>
+    <button onclick="answer()">To get the Answer</button>
+    <p id="sol"></p>
+    <script>
+        const answer =() => {
+            var  n=document.getElementById("no").value;
+              var fact=1;
+             for(i=1;i<=n;i++){
+                 fact=fact*i;
+             }
+             document.getElementById("sol").innerHTML=fact;
+            }
+        </script>
+</body>
+</html>

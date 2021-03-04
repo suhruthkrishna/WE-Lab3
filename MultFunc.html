@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><title> sample page 3</title></head>
+    <body>
+        <script>
+            class user {
+                constructor(uname,email,pass) {
+                this.uname=uname;
+                this.email = email;
+                this.pass = pass;
+                 }
+                 count(){
+                
+                 }
+                 register(){
+                    document.write("Username of person is : "+this.uname);
+                    document.write("<br>");
+                 }
+            }
+            class name extends user{
+                constructor(uname,email,pass,pack){
+                    super(uname,email,pass);
+                    this.pack=pack;
+                }
+                getPackage(){
+                    document.write("Package is : "+this.pack);
+                    document.write("<br>");
+                    document.write("<hr>");
+                    document.write("Name is :"+this.uname);
+                    document.write("<hr>");
+                }
+            }
+            var p1 = new name("Suhruth","suhruth@gmail.com","krish1712",343000);
+            p1.getPackage();
+        </script>
+    </body>
+</html>

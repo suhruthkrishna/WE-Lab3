@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user{
+            static count=0;
+            constructor(uname,email,password)
+            {
+                this.uname=uname;
+                this.email=email
+                this.password=password;
+            }
+            counter(){
+                user.count=user.count+1;
+                document.write(user.count);
+                document.write("<br>");
+                document.write("<hr>");
+            }
+            register(){
+                document.write("The user logged in is " +this.uname);
+                document.write("<br>");
+                document.write("<hr>");
+                document.write("With email id " +this.email);
+                document.write("<br>");
+                document.write("<hr>");
+                document.write("Password "+this.password);
+                document.write("<br>");
+                document.write("<hr>");
+            }
+        }
+        var person1=new user("suhruth","suhruth@gmail.com","123456");
+        person1.counter();
+        person1.register();
+        var person2 = new user("likhithkumar","likhith123","kumar");
+        person2.counter();
+        person2.register();
+        </script>
+</body>
+</html>
